@@ -19,9 +19,11 @@ export default {
 .auth-page
   margin: 42px auto
   padding: 32px
+  align-items: center
 
   @media only screen and (min-width: 1024px)
     display: flex
+    justify-content: center
 
 .auth-page__img
   margin: 0 auto 42px
@@ -31,5 +33,6 @@ export default {
   object-fit: contain
 
   @media only screen and (min-width: 1024px)
-    max-width: 741px
+    max-width: 641px
+    margin: 0 80px 0 0
 </style>

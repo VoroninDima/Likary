@@ -28,6 +28,10 @@ name: "Login",
   max-width: 400px
   margin: 0 auto
   height: fit-content
+  border-radius: 5px
+
+  @media only screen and (min-width: 1024px)
+    margin: 0
 
 .login__forgot-password
   margin-top: 12px

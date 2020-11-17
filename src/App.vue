@@ -2,19 +2,33 @@
   <div id="app">
     <Header/>
     <router-view/>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Header from "@/components/Header"
+import Footer from "@/components/Footer"
 
 export default {
-  components: {Header}
+  components: {Footer, Header}
 }
 </script>
 <style lang="sass">
-p, span, inpout
+*
+  box-sizing: border-box
+
+p, span, input, li
   font-family: sans-serif
+  margin: 0
+  padding: 0
+  color: #484848
+ul
+  margin: 0
+  padding: 0
+
+li
+  list-style: none
 
 button
   background: none
@@ -22,9 +36,6 @@ button
 
 input
   box-sizing: border-box
-
-html, body
-  height: 100%
 
 body
   margin: 0
@@ -37,4 +48,10 @@ body
   color: #4154FF
   font-size: 12px
   font-weight: 500
+  
+hr
+  border: 0
+  height: 2px
+  background-color: #c4c4c4
+  width: 100%
 </style>
