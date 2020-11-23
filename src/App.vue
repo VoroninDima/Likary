@@ -20,9 +20,16 @@ export default {
 
 p, span, input, li, h2, h1
   font-family: Roboto, sans-serif
+
+html
+  height: 100%
+
+p, span, input, li
+  font-family: sans-serif
   margin: 0
   padding: 0
   color: #484848
+
 ul
   margin: 0
   padding: 0
@@ -39,10 +46,13 @@ input
 
 body
   margin: 0
+  height: 100%
 
 #app
   background-color: #f9f9f9
-  height: 100%
+  min-height: 100%
+  display: flex
+  flex-direction: column
 
 .pseudo-link
   color: #4154FF
@@ -57,4 +67,12 @@ hr
 
 .register-wrapper__btn
   margin-top: 22px
+
+.page-container
+  margin: 0 auto
+  max-width: 1180px
+  padding: 20px
+
+  @media only screen and (min-width: 1024px)
+    padding: 40px
 </style>

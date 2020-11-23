@@ -12,20 +12,40 @@ const routes = [
     component: Auth
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  },
-  {
     path: '/register',
     name: 'Register',
     // route level code-splitting
     // this generates a separate chunk (register.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/Register.vue')
+  },
+  {
+    path: '/404',
+    name: 'NotFound',
+    // route level code-splitting
+    // this generates a separate chunk (not-found.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "not-found" */ '../views/NotFound.vue')
+  },
+  {
+    path: '*',
+    redirect: '/404'
+  },
+  {
+    path: '/cookies',
+    name: 'Cookies',
+    // route level code-splitting
+    // this generates a separate chunk (cookies.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "cookies" */ '../views/Cookies.vue')
+  },
+  {
+    path: '/policy',
+    name: 'Policy',
+    // route level code-splitting
+    // this generates a separate chunk (policy.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "policy" */ '../views/Policy.vue')
   }
 ]
 

@@ -53,6 +53,7 @@ name: "Footer"
 .footer
   background-color: #fff
   padding: 0 24px 19px 24px
+  margin-top: auto
 
 .footer-top
   display: flex
@@ -85,18 +86,18 @@ name: "Footer"
   &:first-child
     display: flex
     justify-content: space-between
+    width: 270px
+
+    @media only screen and (min-width: 400px)
+      width: 350px
 
     @media only screen and (min-width: 1024px)
+      width: auto
       display: block
 
-    .footer-nav__list-item:not(:last-child)
-      margin-right: 40px
-
-      @media only screen and (min-width: 1024px)
-        margin-right: 0
-
   &:not(:last-child)
-    margin-right: 60px
+    @media only screen and (min-width: 1024px)
+      margin-right: 60px
 
 .footer-nav__list-item
   font-size: 14px
