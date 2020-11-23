@@ -1,0 +1,33 @@
+<template>
+  <div class="register-third-form">
+    <div class="choose-file">
+      <svg width="57" height="67" viewBox="0 0 57 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32.5082 0C33.3333 0 34.0264 0.7 34.0264 1.53333V12.2667C34.0264 18.3667 38.9769 23.3667 45.0495 23.4C47.5247 23.4 49.5049 23.4333 51.0231 23.4333C52.0462 23.4333 53.7294 23.4 55.1485 23.4C55.9736 23.4 56.6667 24.0667 56.6667 24.9V51.7C56.6667 59.9667 50 66.6667 41.8152 66.6667H15.5776C6.9637 66.6667 0 59.6333 0 50.9667V15.0333C0 6.76667 6.63366 0 14.8845 0H32.5082ZM27.1287 22.4667C26.7987 22.4667 26.4686 22.5333 26.1716 22.6667C25.8746 22.8 25.6106 22.9667 25.3795 23.2L15.9406 32.8C14.9835 33.7667 14.9835 35.3333 15.9406 36.3C16.8977 37.2667 18.4488 37.2667 19.4059 36.3L24.6535 30.9667V47.0667C24.6535 48.4333 25.7426 49.5333 27.1287 49.5333C28.4818 49.5333 29.571 48.4333 29.571 47.0667V30.9667L34.8185 36.3C35.7756 37.2667 37.3267 37.2667 38.2838 36.3C39.2739 35.3333 39.2739 33.7667 38.3168 32.8L28.8449 23.2C28.6139 22.9667 28.3498 22.8 28.0528 22.6667C27.7558 22.5333 27.4587 22.4667 27.1287 22.4667ZM38.8175 3.02C38.8175 1.58333 40.5403 0.87 41.5271 1.90667C45.098 5.65333 51.3323 12.2033 54.8175 15.8633C55.7779 16.8733 55.0716 18.55 53.6822 18.5533C50.9693 18.5633 47.7746 18.5533 45.4743 18.53C41.8241 18.53 38.8175 15.4933 38.8175 11.8067V3.02Z" fill="#8F8F8F"/>
+      </svg>
+    </div>
+    <span class="register-third-form__choose-text">Загрузите подтверждающий документ.</span>
+    <ButtonCustom class="register-wrapper__btn">Регистрация</ButtonCustom>
+  </div>
+</template>
+
+<script>
+import InputCustom from "@/components/elements/InputCustom";
+import ButtonCustom from "@/components/elements/ButtonCustom";
+
+export default {
+  name: "ThirdForm",
+  components: {ButtonCustom, InputCustom}
+}
+</script>
+
+<style scoped lang="sass">
+.choose-file
+  border: 1px solid #C4C4C4
+  border-radius: 7px
+  padding: 100px 0
+  margin-bottom: 15px
+
+.register-third-form__choose-text
+  font-weight: 400
+  display: block
+</style>

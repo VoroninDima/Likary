@@ -18,8 +18,8 @@ export default {
 *
   box-sizing: border-box
 
-p, span, input, li
-  font-family: sans-serif
+p, span, input, li, h2, h1
+  font-family: Roboto, sans-serif
   margin: 0
   padding: 0
   color: #484848
@@ -54,4 +54,7 @@ hr
   height: 2px
   background-color: #c4c4c4
   width: 100%
+
+.register-wrapper__btn
+  margin-top: 22px
 </style>

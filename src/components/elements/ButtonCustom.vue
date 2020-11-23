@@ -1,5 +1,5 @@
 <template>
- <button class="button" :class="{'button--accent': slug === 'accent'}" :type="type"><slot></slot></button>
+ <button @click="$emit('click')" class="button" :class="{'button--accent': slug === 'accent'}" :type="type"><slot></slot></button>
 </template>
 
 <script>
