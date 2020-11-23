@@ -53,6 +53,7 @@ name: "Footer"
 .footer
   background-color: #fff
   padding: 0 24px 19px 24px
+  margin-top: auto
 
 .footer-top
   display: flex

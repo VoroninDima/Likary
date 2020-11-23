@@ -18,6 +18,9 @@ export default {
 *
   box-sizing: border-box
 
+html
+  height: 100%
+
 p, span, input, li
   font-family: sans-serif
   margin: 0
@@ -39,10 +42,13 @@ input
 
 body
   margin: 0
+  height: 100%
 
 #app
   background-color: #f9f9f9
-  height: 100%
+  min-height: 100%
+  display: flex
+  flex-direction: column
 
 .pseudo-link
   color: #4154FF
@@ -54,4 +60,9 @@ hr
   height: 2px
   background-color: #c4c4c4
   width: 100%
+
+.page-container
+  margin: 0 auto
+  max-width: 1180px
+  padding: 40px
 </style>

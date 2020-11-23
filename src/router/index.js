@@ -11,12 +11,33 @@ const routes = [
     component: Auth
   },
   {
-    path: '/about',
-    name: 'About',
+    path: '/404',
+    name: '404',
+
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../views/NotFound.vue')
+  },
+  {
+    path: '*',
+    redirect: '/404'
+  },
+  {
+    path: '/cookies',
+    name: 'Cookies',
+    // route level code-splitting
+    // this generates a separate chunk (cookies.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "cookies" */ '../views/Cookies.vue')
+  },
+  {
+    path: '/policy',
+    name: 'Policy',
+    // route level code-splitting
+    // this generates a separate chunk (policy.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "policy" */ '../views/Policy.vue')
   }
 ]
 
