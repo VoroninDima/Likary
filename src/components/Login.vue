@@ -14,7 +14,7 @@ import InputCustom from "@/components/elements/InputCustom"
 import ButtonCustom from "@/components/elements/ButtonCustom"
 
 export default {
-name: "Login",
+  name: "Login",
   components: {ButtonCustom, InputCustom}
 }
 </script>

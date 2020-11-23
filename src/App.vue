@@ -64,5 +64,8 @@ hr
 .page-container
   margin: 0 auto
   max-width: 1180px
-  padding: 40px
+  padding: 20px
+
+  @media only screen and (min-width: 1024px)
+    padding: 40px
 </style>
