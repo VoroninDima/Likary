@@ -25,6 +25,7 @@ export default {
   font-size: 18px
   font-weight: 500
   padding: 11px
+  cursor: pointer
 
   &--accent
     background-color: #FF550C

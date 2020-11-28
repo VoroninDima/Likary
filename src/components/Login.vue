@@ -5,7 +5,9 @@
     <ButtonCustom class="login__btn">Вход</ButtonCustom>
     <button class="pseudo-link login__forgot-password">Забыли пароль?</button>
     <hr class="login__hr">
-    <ButtonCustom slug="accent">Создать аккаунт</ButtonCustom>
+    <router-link to="/register">
+      <ButtonCustom slug="accent">Создать аккаунт</ButtonCustom>
+    </router-link>
   </div>
 </template>
 

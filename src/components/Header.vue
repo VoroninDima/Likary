@@ -10,12 +10,25 @@
       <rect x="27.707" y="39.3299" width="23.3631" height="4.60805" rx="2.30403" fill="white"/>
     </svg>
     <span class="header__subtitle">Социальная сеть для докторов</span>
+    <router-link v-if="!isAuth" to="/">
+      <ButtonCustom class="header-login">Войти</ButtonCustom>
+    </router-link>
   </header>
 </template>
 
 <script>
+import ButtonCustom from "@/components/elements/ButtonCustom";
 export default {
-name: "Header"
+name: "Header",
+  components: {ButtonCustom},
+  computed: {
+    isAuth () {
+      return this.$route.name === 'Auth'
+    }
+  },
+  mounted () {
+    console.log(this.$route);
+  }
 }
 </script>
 
@@ -43,4 +56,9 @@ name: "Header"
   @media only screen and (min-width: 1024px)
     display: block
     margin-right: 54px
+
+.header-login
+  margin-right: 50px
+  @media only screen and (min-width: 700px)
+    width: 170px
 </style>

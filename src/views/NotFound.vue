@@ -17,6 +17,7 @@
 <style scoped lang="sass">
 .page-not-found
     text-align: center
+    padding-bottom: 200px
 
 .page-not-found__img
     max-width: 450px

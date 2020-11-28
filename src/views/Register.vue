@@ -14,7 +14,7 @@
       </div>
     </div>
     <span v-if="currentForm === 3" class="register-page__policy">
-      Нажимая кнопку Регистрация, вы принимаете <a href="/privacy-policy" class="pseudo-link">Условия</a>, <a href="/privacy-policy" class="pseudo-link">Политику использования данных</a> и <a href="/privacy-policy" class="pseudo-link">Политику в отношении файлов cookie</a>. Вы можете получать от нас Email-уведомления, отказаться от которых можно в любой момент.
+      Нажимая кнопку Регистрация, вы принимаете <router-link to="/policy" class="pseudo-link">Условия</router-link>, <router-link to="/cookies" class="pseudo-link">Политику использования данных</router-link> и <router-link to="/privacy-policy" class="pseudo-link">Политику в отношении файлов cookie</router-link>. Вы можете получать от нас Email-уведомления, отказаться от которых можно в любой момент.
     </span>
   </div>
 </template>
