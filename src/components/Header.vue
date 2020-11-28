@@ -9,7 +9,7 @@
       <circle cx="52.7137" cy="41.6486" r="4.6961" fill="white"/>
       <rect x="27.707" y="39.3299" width="23.3631" height="4.60805" rx="2.30403" fill="white"/>
     </svg>
-    <span class="header__subtitle">Социальная сеть для докторов</span>
+    <span class="header__subtitle" v-t="'message.header_phrase'">{{$t('message.header_phrase')}}</span>
     <router-link v-if="!isAuth" to="/">
       <ButtonCustom class="header-login">Войти</ButtonCustom>
     </router-link>
@@ -19,7 +19,7 @@
 <script>
 import ButtonCustom from "@/components/elements/ButtonCustom";
 export default {
-name: "Header",
+  name: "Header",
   components: {ButtonCustom},
   computed: {
     isAuth () {
