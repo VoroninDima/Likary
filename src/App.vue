@@ -40,6 +40,7 @@ li
 button
   background: none
   border: 0
+  cursor: pointer
 
 input
   box-sizing: border-box

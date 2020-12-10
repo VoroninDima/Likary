@@ -1,10 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Auth from "@/views/Auth";
-import Register from "@/views/Register";
-import NotFound from "@/views/NotFound";
-import Cookies from "@/views/Cookies";
-import Policy from "@/views/Policy";
+import Register from "@/views/Register"
+import NotFound from "@/views/NotFound"
+import Cookies from "@/views/Cookies"
+import Policy from "@/views/Policy"
+import Main from "@/views/Main"
 
 Vue.use(VueRouter)
 
@@ -46,6 +47,14 @@ const routes = [
     // this generates a separate chunk (policy.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: Policy
+  },
+  {
+    path: '/main',
+    name: 'Main',
+    // route level code-splitting
+    // this generates a separate chunk (policy.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: Main
   }
 ]
 
