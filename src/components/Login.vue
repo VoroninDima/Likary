@@ -1,7 +1,7 @@
 <template>
   <div class="login">
     <InputCustom placeholder="Электронный адрес или номер телефона"></InputCustom>
-    <InputCustom placeholder="Пароль"></InputCustom>
+    <InputCustom placeholder="Пароль" type="password"></InputCustom>
     <ButtonCustom class="login__btn">Вход</ButtonCustom>
     <button class="pseudo-link login__forgot-password">Забыли пароль?</button>
     <hr class="login__hr">

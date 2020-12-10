@@ -10,22 +10,22 @@
       </svg>
       <nav class="footer-nav">
         <ul class="footer-nav__list">
-          <li class="footer-nav__list-item">Компания</li>
-          <li class="footer-nav__list-item">Пресса</li>
-          <li class="footer-nav__list-item">Вакансии</li>
-          <li class="footer-nav__list-item">Контакты</li>
+          <li class="footer-nav__list-item"><router-link to="/404">Компания</router-link></li>
+          <li class="footer-nav__list-item"><router-link to="/404">Пресса</router-link></li>
+          <li class="footer-nav__list-item"><router-link to="/404">Вакансии</router-link></li>
+          <li class="footer-nav__list-item"><router-link to="/404">Контакты</router-link></li>
         </ul>
         <ul class="footer-nav__list">
-          <li class="footer-nav__list-item">Партнеры</li>
-          <li class="footer-nav__list-item">Бизнесу</li>
-          <li class="footer-nav__list-item">Решения для больниц</li>
+          <li class="footer-nav__list-item"><router-link to="/404">Партнеры</router-link></li>
+          <li class="footer-nav__list-item"><router-link to="/404">Бизнесу</router-link></li>
+          <li class="footer-nav__list-item"><router-link to="/404">Решения для больниц</router-link></li>
         </ul>
         <ul class="footer-nav__list">
-          <li class="footer-nav__list-item">Likari App</li>
-          <li class="footer-nav__list-item">Помощь</li>
-          <li class="footer-nav__list-item">Пользовательское соглашение</li>
-          <li class="footer-nav__list-item">Использование данных</li>
-          <li class="footer-nav__list-item">Файлы cookie</li>
+          <li class="footer-nav__list-item"><router-link to="/404">Likari App</router-link></li>
+          <li class="footer-nav__list-item"><router-link to="/404">Помощь</router-link></li>
+          <li class="footer-nav__list-item"><router-link to="/cookies">Пользовательское соглашение</router-link></li>
+          <li class="footer-nav__list-item"><router-link to="/policy">Использование данных</router-link></li>
+          <li class="footer-nav__list-item"><router-link to="/404">Файлы cookie</router-link></li>
         </ul>
       </nav>
     </div>
@@ -101,7 +101,6 @@ name: "Footer"
 
 .footer-nav__list-item
   font-size: 14px
-
   @media only screen and (min-width: 1024px)
     margin-bottom: 20px
 
@@ -132,6 +131,7 @@ name: "Footer"
 
 .footer-bottom__co
   font-size: 12px
+  font-weight: 200
 
   @media only screen and (min-width: 1024px)
     font-size: 24px

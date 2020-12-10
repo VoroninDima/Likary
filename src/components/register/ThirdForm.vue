@@ -6,17 +6,15 @@
       </svg>
     </div>
     <span class="register-third-form__choose-text">Загрузите подтверждающий документ.</span>
-    <ButtonCustom class="register-wrapper__btn">Регистрация</ButtonCustom>
   </div>
 </template>
 
 <script>
 import InputCustom from "@/components/elements/InputCustom";
-import ButtonCustom from "@/components/elements/ButtonCustom";
 
 export default {
   name: "ThirdForm",
-  components: {ButtonCustom, InputCustom}
+  components: {InputCustom}
 }
 </script>
 

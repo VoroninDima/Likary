@@ -1,15 +1,17 @@
 <template>
-  <div class="register-page">
+  <div class="register-page page-container">
     <h1 class="register-page__title">Создание аккаунта</h1>
     <div class="register-wrapper">
-      <FirstForm v-if="currentForm === 1" @nextForm="currentForm++"/>
-      <SecondForm v-else-if="currentForm === 2" @nextForm="currentForm++"/>
-      <ThirdForm v-else/>
+      <FirstForm v-show="currentForm === 1"/>
+      <SecondForm v-show="currentForm === 2"/>
+      <ThirdForm v-show="currentForm === 3"/>
+      <ButtonCustom class="register-wrapper__btn" @click="currentForm++">{{currentForm === 3 ? 'Регистрация' : 'Продолжить'}}</ButtonCustom>
       <div class="register-wrapper__steps">
         <div
             class="register-wrapper__steps-item"
             v-for="key of 3"
             :key="key"
+            @click="currentForm = key"
             :class="{'register-wrapper__steps-item--active': key <= currentForm}"></div>
       </div>
     </div>
@@ -24,9 +26,10 @@
 import FirstForm from "@/components/register/FirstForm";
 import SecondForm from "@/components/register/SecondForm";
 import ThirdForm from "@/components/register/ThirdForm";
+import ButtonCustom from "@/components/elements/ButtonCustom";
 export default {
 name: "Register",
-  components: {ThirdForm, SecondForm, FirstForm},
+  components: {ButtonCustom, ThirdForm, SecondForm, FirstForm},
   data () {
     return {
       currentForm: 1
@@ -52,6 +55,9 @@ name: "Register",
   padding: 40px
   border-radius: 5px
   max-width: 450px
+  height: 515px
+  display: flex
+  flex-direction: column
 
 .register-wrapper__steps
   display: flex
@@ -63,6 +69,7 @@ name: "Register",
   height: 3px
   width: 25px
   border-radius: 3px
+  cursor: pointer
 
   &:not(:last-child)
     margin-right: 5px
@@ -75,4 +82,7 @@ name: "Register",
   display: block
   font-size: 12px
   margin: 25px auto 0
+
+.register-wrapper__btn
+  margin-top: auto
 </style>

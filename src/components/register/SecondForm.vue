@@ -1,20 +1,25 @@
 <template>
   <div>
-    <InputCustom placeholder="Страна"></InputCustom>
+    <SelectCustom :options="countries" placeholder="Страна"/>
     <InputCustom placeholder="Город"></InputCustom>
-    <InputCustom placeholder="Специальность"></InputCustom>
+    <SelectCustom :options="specialization" placeholder="Специальность"/>
     <InputCustom placeholder="Место работы"></InputCustom>
-    <ButtonCustom class="register-wrapper__btn" @click="$emit('nextForm')">Продолжить</ButtonCustom>
   </div>
 </template>
 
 <script>
 import InputCustom from "@/components/elements/InputCustom";
-import ButtonCustom from "@/components/elements/ButtonCustom";
+import SelectCustom from "@/components/elements/SelectCustom";
 
 export default {
   name: "SecondForm",
-  components: {ButtonCustom, InputCustom}
+  components: {SelectCustom, InputCustom},
+  data () {
+    return {
+      countries: [{ label: 'Украина', value: 'ua' }, { label: 'Россия', value: 'ru' }, { label: 'Беларусь', value: 'bl' }, { label: 'Америка', value: 'us' }],
+      specialization: [{ label: 'Стомат', value: 'ua' }, { label: 'Акушер', value: 'ru' }, { label: 'Анастезиолог', value: 'bl' }]
+    }
+  }
 }
 </script>
 
