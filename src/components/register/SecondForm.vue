@@ -16,7 +16,7 @@ export default {
   components: {SelectCustom, InputCustom},
   data () {
     return {
-      countries: [{ label: 'Украина', value: 'ua' }, { label: 'Россия', value: 'ru' }, { label: 'Беларусь', value: 'bl' }, { label: 'Америка', value: 'us' }],
+      countries: [{ label: 'Беларусь', value: 'bl' }, { label: 'Польша', value: 'pl' },  { label: 'Россия', value: 'ru' }, { label: 'Украина', value: 'ua' }, { label: 'Чехия', value: 'cz' }],
       specialization: [{ label: 'Стомат', value: 'ua' }, { label: 'Акушер', value: 'ru' }, { label: 'Анастезиолог', value: 'bl' }]
     }
   }
