@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <ProfileCard/>
+    <ProfileCard v-if="false"/>
     <div class="page-container">
       <MainTitle/>
       <Feed/>

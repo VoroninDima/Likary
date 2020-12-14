@@ -2,7 +2,7 @@
   <div id="app">
     <Header/>
     <router-view/>
-    <Footer/>
+    <Footer v-if="!isFooterHidden"/>
   </div>
 </template>
 
@@ -11,7 +11,12 @@ import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 
 export default {
-  components: {Footer, Header}
+  components: {Footer, Header},
+  computed: {
+    isFooterHidden () {
+      return this.$route.name === 'Main'
+    }
+  }
 }
 </script>
 <style lang="sass">
@@ -55,6 +60,7 @@ body
   min-height: 100%
   display: flex
   flex-direction: column
+  padding-top: 80px
 
 .pseudo-link
   color: #4154FF

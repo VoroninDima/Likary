@@ -73,6 +73,10 @@ export default {
   box-shadow: 0 3px 15px 0 rgba(0, 0, 0, 0.25)
   background-color: #fff
   margin-top: 12px
+  position: fixed
+  width: 100%
+  top: 0
+  z-index: 10
 
 .header-inner-wrapper
   display: flex
@@ -109,6 +113,7 @@ export default {
 
 .header__search-wrapper
   position: relative
+  margin-left: 25px
 
   svg
     position: absolute
