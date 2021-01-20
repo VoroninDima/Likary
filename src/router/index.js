@@ -6,6 +6,7 @@ import NotFound from "@/views/NotFound"
 import Cookies from "@/views/Cookies"
 import Policy from "@/views/Policy"
 import Main from "@/views/Main"
+import Profile from '../views/Profile'
 
 Vue.use(VueRouter)
 
@@ -55,6 +56,14 @@ const routes = [
     // this generates a separate chunk (policy.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: Main
+  },
+  {
+    path: '/profile',
+    name: 'Profile',
+    // route level code-splitting
+    // this generates a separate chunk (policy.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: Profile
   }
 ]
 

@@ -14,6 +14,7 @@
           <li class="footer-nav__list-item"><router-link to="/404">Пресса</router-link></li>
           <li class="footer-nav__list-item"><router-link to="/404">Вакансии</router-link></li>
           <li class="footer-nav__list-item"><router-link to="/404">Контакты</router-link></li>
+          <li class="footer-nav__list-item"><router-link to="/main">Лента</router-link></li>
         </ul>
         <ul class="footer-nav__list">
           <li class="footer-nav__list-item"><router-link to="/404">Партнеры</router-link></li>

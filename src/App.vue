@@ -24,7 +24,7 @@ export default {
 *
   box-sizing: border-box
 
-p, span, input, li, h2, h1, select, button, a
+p, span, input, li, h2, h1, h3, select, button, a
   font-family: Roboto, sans-serif
   margin: 0
   padding: 0
@@ -65,8 +65,10 @@ body
 .pseudo-link
   color: #4154FF
   font-size: 12px
-  font-weight: 500
-  
+
+  &--underline
+    border-bottom: 1px solid #4154FF
+
 hr
   border: 0
   height: 2px
@@ -94,4 +96,10 @@ hr
     display: block
     overflow: hidden
     width: 95%
+
+.box-with-shadow
+  background-color: #fff
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.25)
+  border-radius: 5px
+
 </style>

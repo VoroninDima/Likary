@@ -66,6 +66,7 @@ export default {
     box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.25)
     margin-top: 20px
     padding: 20px
+    border-radius: 5px
 
 .feed-item-header
     display: flex

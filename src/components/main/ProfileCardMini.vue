@@ -10,7 +10,7 @@
 <script>
 import ButtonCustom from "@/components/elements/ButtonCustom";
 export default {
-  name: "ProfileCard",
+  name: "ProfileCardMini",
   components: {ButtonCustom}
 }
 </script>

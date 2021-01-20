@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <ProfileCard v-if="false"/>
+    <ProfileCardMini v-if="false"/>
     <div class="page-container">
       <MainTitle/>
       <Feed/>
@@ -11,10 +11,10 @@
 <script>
 import MainTitle from '../components/main/MainTitle'
 import Feed from '../components/main/Feed'
-import ProfileCard from "@/components/main/ProfileCard";
+import ProfileCardMini from '@/components/main/ProfileCardMini'
 export default {
   name: 'Main',
-  components: {ProfileCard, Feed, MainTitle }
+  components: {ProfileCardMini, Feed, MainTitle }
 }
 </script>
 
